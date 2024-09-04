@@ -1,0 +1,119 @@
+:root{
+    --main-color:white;
+    --special-color: rgba(253,29,191,1) ;
+    --special-grid-color:linear-gradient(90deg,  rgba(253,29,191,1) 50%, #eee 100%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+}
+a {
+    text-decoration: none;
+    cursor:pointer;
+    color: var(--color, #eee);
+}
+.desc{
+    line-height: 1.5;
+    font-style: italic;
+    
+}
+.page-header{
+    background-image: var( --special-grid-color , linear-gradient(90deg,  rgba(253,29,191,1) 50%, #eee 100%));
+    background-clip:text;
+    color:transparent;
+
+}
+.special-color{
+    background-image: var( --special-grid-color , linear-gradient(90deg,  rgba(253,29,191,1) 50%, #eee 100%));
+    background-clip:text;
+    color:transparent;
+}
+.special-font {
+    font-family: "Clicker Script", cursive;
+}
+.sec-special-font {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.section{
+    width: 100%;
+    background-color: #000;
+}
+.container{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    min-height: 100vh;
+    padding:25px;
+    background-color: #000;
+    position:relative;
+    color: var(--main-color, #eee);
+    text-align: center;
+}
+.btn {
+    width: fit-content;
+    min-width: 80px; 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateZ(5px);
+    background-image: var( --special-grid-color , linear-gradient(90deg,  rgba(253,29,191,1) 50%, #eee 100%);
+    color: #000;
+    box-shadow: 0 0 3px #fee;
+    outline: none;
+    border: none;
+}
+.contact-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.contact-btn a {
+    color: #000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    /* font-family: revert; */
+}
+
+
+
+@media  (max-width: 767px) {
+    .container {
+      width:100%;
+      margin:0 auto;
+  }
+  }
+
+
+/* draft Style */
+/* a{
+    background-image: linear-gradient(90deg, rgba(170,99,217,1) 10%, rgba(253,29,191,1) 50%, rgba(69,252,87,1) 100%);
+    background-clip:text;
+    --webkit-background-clip:text;
+    --webkit-text-fill-color:transparent;
+} */
+/* span{
+    font-family: "Clicker Script", cursive;
+} */

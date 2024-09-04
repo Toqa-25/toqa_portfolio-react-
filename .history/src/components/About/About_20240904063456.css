@@ -1,0 +1,37 @@
+:root{
+    --main-color:white;
+    --special-color: rgba(253,29,191,1) ;
+    --special-grid-color:linear-gradient(90deg,  rgba(253,29,191,1) 50%, #eee 100%);
+}
+.about.flex-column {
+    gap: 50px;
+}
+.about-info {
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about-info .desc.coder-desc {
+    font-size: 18px;
+}
+a.elzero {
+    display: inline-block;
+    margin: 0 5px;
+    font-weight:500;
+}
+.clients-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+.review-img img {
+    width: 100%;
+    max-width:250px;
+    height: 200px;
+    border-radius: 15px;
+}

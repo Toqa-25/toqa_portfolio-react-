@@ -1,0 +1,16 @@
+.Projects-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.project-item{
+    box-shadow: 0 0 3px linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    outline: none;
+    border: none;
+}
+.project-img {
+    width: 100%;
+    max-width:100%
+    height: 200px;
+}

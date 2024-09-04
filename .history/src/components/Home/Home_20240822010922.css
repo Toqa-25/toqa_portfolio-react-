@@ -1,0 +1,15 @@
+.home-content {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.home-info {
+    width: 350px;
+    text-align: left;
+}
+.coder-desc{
+    font-size: 20px;
+}
+.coder-name{
+    font-size: 20px;
+}

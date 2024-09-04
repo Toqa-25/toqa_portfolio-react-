@@ -1,0 +1,134 @@
+.home {
+    display: flex;
+}
+.home-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: fit-content;
+    /* align-items: center; */
+}
+.home-info {
+    width: 350px;
+    text-align: left;
+}
+.coder-name{
+    font-size: 25px;
+}
+.coder-desc{
+    font-size: 20px;
+    font-style: italic;
+    position:relative;
+}
+.coder-desc a{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 10px;
+    width: 50px;
+    display: inline-block;
+}
+.arrow-icon svg{
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    color:rgba(253, 29, 191, 1);
+    animation:animate-arrow 2s infinite;
+    -webkit-animation:animate-arrow 2s infinite;
+}
+.responsive{
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    /* animation:animate-responsive 2s linear infinite; */
+    /* -webkit-animation:animate-responsive 2s linear infinite; */
+}
+.skill{
+    position: relative;
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background: #000;
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 15px;
+    flex-wrap:wrap;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.skill:before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:0%;
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    /* animation:animate-skill 3s  linear 20s infinite  ;
+    -webkit-animation:animate-skill 3s  linear 20s infinite  ; */
+}
+.html:before{
+    animation:animate-skill 3s  linear infinite  ;
+    -webkit-animation:animate-skill 3s  linear infinite  ;
+    animation-delay: 20s;
+    -webkit-animation-delay:animate-skill 3s  linear infinite  ;
+}
+
+@keyframes animate-responsive{
+    0%{
+        background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+        background-clip: text;
+        --webkit-background-clip: text;
+        color: transparent;
+}
+    50%{
+        background: transparent;
+        background-clip: text;
+        --webkit-background-clip: text;
+        color: transparent;
+}
+   
+    100%{
+         background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+         background-clip: text;
+         --webkit-background-clip: text;
+         color: transparent;
+}
+}
+
+ @keyframes animate-arrow{
+    0% , 100%{
+        transform:translatex(0)  scale(1.1)  ;
+        -webkit-transform:translatex(0)  scale(1.1)  ;
+        -moz-transform:translatex(0)  scale(1.1)  ;
+        -ms-transform:translatex(0)  scale(1.1)  ;
+        -o-transform:translatex(0)  scale(1.1)  ;
+}
+    50%{
+        transform:translatex(10%) scale(1.2)   ;
+        -webkit-transform:translatex(10%) scale(1.2)   ;
+        -moz-transform:translatex(10%) scale(1.2)   ;
+        -ms-transform:translatex(10%) scale(1.2)   ;
+        -o-transform:translatex(10%) scale(1.2)   ;
+}
+  
+} 
+
+ @keyframes animate-skill{
+    0% {
+        width:0%;
+}
+    50% {
+        width:50%;
+}
+    100%{
+       width:100%;
+}
+  
+} 

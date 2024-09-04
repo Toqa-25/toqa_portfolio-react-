@@ -1,0 +1,206 @@
+.home {
+    display: flex;
+}
+.home-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: fit-content;
+    gap: 25px;
+    /* align-items: center; */
+}
+.home-info {
+    width: 350px;
+    text-align: left;
+}
+.coder-name{
+    font-size: 25px;
+}
+.coder-desc{
+    font-size: 20px;
+    font-style: italic;
+    position:relative;
+}
+.coder-desc a{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 10px;
+    width: 50px;
+    display: inline-block;
+}
+.arrow-icon svg{
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    color:rgba(253, 29, 191, 1);
+    animation:animate-arrow 2s infinite;
+    -webkit-animation:animate-arrow 2s infinite;
+}
+.words {
+    display: flex;
+    justify-content: space-between;
+    /* position:relative; */
+}
+
+.word{
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    opacity:0;
+    animation:animate-word 6s linear infinite;
+    -webkit-animation:animate-word 7s linear infinite;
+}
+.responsive{
+    position: absolute;
+    top: -50px;
+    left: 50px;
+}
+.heigh-quilty{
+    animation-delay:1s; 
+}
+.html{
+    animation-delay:2s; 
+}
+.css{
+    animation-delay:3s; 
+}
+.js{
+    animation-delay:4s; 
+}
+.scss{
+    animation-delay:5s; 
+}
+.react{
+    animation-delay:6s; 
+}
+.skills{
+    display: flex;
+    gap: 15px;
+    flex-wrap:wrap;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.skill{
+    position: relative;
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background: #000;
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: fit-content;
+    padding:3px;
+    /* flex: 1; */
+}
+
+.skill:before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:0%;
+    background: linear-gradient(90deg, rgba(253, 29, 191, 1) 50%, #eee 100%);
+    background-clip: text;
+    --webkit-background-clip: text;
+    color: transparent;
+    animation:animate-skill     1 ;
+    -webkit-animation:animate-skill     1 ;
+}
+.html:before{
+    animation-duration:4s ;
+}
+.css:before{
+    animation-duration:3s ;
+    animation-delay: 4s;
+}
+.js:before{
+    animation-duration:2s ;
+    animation-delay: 7s;
+}
+.scss:before{
+    animation-duration:4s ;
+    animation-delay: 9s;
+}
+.react:before{
+    animation-duration:5s ;
+    animation-delay: 11s;
+}
+
+@keyframes animate-word{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }   
+    100%{
+        opacity:0;
+         
+    }
+}
+
+ @keyframes animate-arrow{
+    0% , 100%{
+        transform:translatex(0)  scale(1.1)  ;
+        -webkit-transform:translatex(0)  scale(1.1)  ;
+        -moz-transform:translatex(0)  scale(1.1)  ;
+        -ms-transform:translatex(0)  scale(1.1)  ;
+        -o-transform:translatex(0)  scale(1.1)  ;
+}
+    50%{
+        transform:translatex(10%) scale(1.2)   ;
+        -webkit-transform:translatex(10%) scale(1.2)   ;
+        -moz-transform:translatex(10%) scale(1.2)   ;
+        -ms-transform:translatex(10%) scale(1.2)   ;
+        -o-transform:translatex(10%) scale(1.2)   ;
+}
+  
+} 
+
+ @keyframes animate-skill{
+    to{
+       width:100%;
+    } 
+} 
+ @keyframes animate-html{
+    0% {
+        width:0%;
+}
+    50% {
+        width:100%;
+}
+    100%{
+       width:0%;
+}
+  
+} 
+ @keyframes animate-css{
+    0% {
+        width:0%;
+}
+    50% {
+        width:100%;
+}
+    100%{
+       width:0%;
+}
+  
+} 
+ @keyframes animate-css{
+    0% {
+        width:0%;
+}
+    50% {
+        width:100%;
+}
+    100%{
+       width:0%;
+}
+  
+} 

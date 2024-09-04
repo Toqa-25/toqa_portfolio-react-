@@ -1,0 +1,21 @@
+.Projects-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.project-item{
+    gap: 10px;
+}
+.project-img {
+    width: 100%;
+    max-width:250px;
+    height: 200px;
+    border-radius: 15px;
+}
+.project-name{
+    
+}
+.project-link {
+    
+}

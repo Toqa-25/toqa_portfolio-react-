@@ -1,0 +1,8 @@
+:root{
+    --main-color:white;
+    --special-color: rgba(253,29,191,1) ;
+    --special-grid-color:linear-gradient(90deg,  rgba(253,29,191,1) 50%, #eee 100%);
+}
+.about.flex-column {
+    gap: 50px;
+}

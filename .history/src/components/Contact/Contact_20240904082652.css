@@ -1,0 +1,32 @@
+.contact {
+    background-color: #000;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 25px;
+    box-shadow: 0 0 1px rgba(253, 29, 191, 1);
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+.contact-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* min-height: 100px; */
+}
+.contact-list-item a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact-icon{
+    color:rgba(253, 29, 191, 1);
+    color: #eee;
+}
+@media (max-width: 767px) {
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
