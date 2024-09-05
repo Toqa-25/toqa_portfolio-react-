@@ -58,8 +58,6 @@
 /* 
     npm install pages --save-dev
     
-    
-    
     "predeploy":"npm run build",
     "deploy":"gh-pages -d  build", 
     "homepage":"https://Toqa-25.github.io/toqa_portfolio-react-", 

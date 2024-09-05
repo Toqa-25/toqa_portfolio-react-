@@ -1,5 +1,8 @@
-{
-  "homepage": "https://Toqa-25.github.io/toqa_portfolio-react-",
+{/* "predeploy":"npm run build",
+    "deploy":"gh-pages -d  build", 
+    "homepage":"https://Toqa-25.github.io/toqa_portfolio-react-", 
+    */
+  
   "name": "toqa_portfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +24,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d  build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "pages": "^0.0.16"
   }
 }
