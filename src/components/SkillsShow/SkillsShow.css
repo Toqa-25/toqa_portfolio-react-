@@ -1,0 +1,75 @@
+@import './../Main//Main.css' ;
+
+.skillShow{
+    max-width:700px;
+    margin-bottom: 20px;
+}
+.skillShow-items {
+    /* box-shadow: 0 0 5px #333; */
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap:wrap;
+    /* height: 80px; */
+    width: 100%;
+    min-height: 100px;
+   
+}
+.skillShow-items img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    animation: shillsShow1 2s  linear infinite alternate;
+    -webkit-animation: shillsShow1 2s  linear infinite alternate;
+}
+
+.skillShow-items img:nth-child(2) {  
+    animation-delay: 1s;
+}
+.skillShow-items img:nth-child(3) {
+    animation-delay: 2s;
+}
+.skillShow-items img:nth-child(4) {
+    animation-delay: 3s;
+}
+.skillShow-items img:nth-child(5) {
+    animation-delay: -4s;
+}
+.skillShow-items img:nth-child(6) {
+    animation-delay: -5s;
+}
+.skillShow-items img:nth-child(7) {
+    animation-delay:-6s;
+}
+.skillShow-items img:nth-child(8) {
+    animation-delay:-8s;
+}
+
+
+@keyframes shillsShow1{
+    100%{
+        transform:translatey(-20px) scale(1.1)   ;
+        -webkit-transform:translatey(-20px) scale(1.1)   ;
+        -moz-transform:translatey(-20px) scale(1.1)   ;
+        -ms-transform:translatey(-20px) scale(1.1)   ;
+        -o-transform:translatey(-20px) scale(1.1)   ;
+}
+
+}
+@keyframes shillsShow2{
+    100%{
+        transform:translatey(-20px)  scale(1.1)  ;
+        -webkit-transform:translatey(-20px)  scale(1.1)  ;
+        -moz-transform:translatey(-20px)  scale(1.1)  ;
+        -ms-transform:translatey(-20px)  scale(1.1)  ;
+        -o-transform:translatey(-20px)  scale(1.1)  ;
+}
+
+}
+
+@media  (max-width: 767px){
+    .skillShow{
+        max-width:500px;
+    }
+}

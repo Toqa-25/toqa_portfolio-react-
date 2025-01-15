@@ -2,11 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import SkillsShow from '../SkillsShow/SkillsShow'
 
-// <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
-//  <span className="responsive"></span>
-//   <br/>
-//   <span className="heigh-quilty" data-text="high quilty">high quilty</span>
+
 
 const Home = () => {
   return (
@@ -27,13 +25,14 @@ const Home = () => {
           <span className="special-color coder-name  "> toqa, </span>  
           </h2>
           <p className=" capitalize desc coder-desc ">
-              passionate frontend web developer with 3 years of experience creating user friendly websites
+              a passionate Frontend Developer with 3 years of experience turning ideas into responsive, user-friendly web interfaces. I specialize in converting designs into clean, efficient code using HTML, CSS, JavaScript, and Bootstrap. Let's build something amazing together
               <Link className="arrow-icon icon" to="./projects">
-                <FontAwesomeIcon icon="fa-solid fa-arrow-right" />             
+                <FontAwesomeIcon icon="fa-solid fa-arrow-right" className="icon" />             
               </Link>
           </p>
           </div>
-      
+          
+          <SkillsShow />
         </div>
     </div>
   )

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import './Contact.css'
 
 const Contact = () => {
+ 
+
   return (
     <div className="contact">
     <ul class="contact-list">

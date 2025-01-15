@@ -21,7 +21,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 function App() {
   return (
         <div className="App">
-          <BrowserRouter basename="/toqa_portfolio-react-" >
+          
             <Nav />
                 <Routes>
                   <Route path ="/"  element={<Home  />}> </Route>
@@ -29,7 +29,6 @@ function App() {
                   <Route path ="/about" element={<About />}> </Route> 
                   <Route path ="/services" element={<Services />}> </Route>                     
                 </Routes>
-            </BrowserRouter>
         </div>
       );
     }

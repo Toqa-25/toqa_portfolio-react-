@@ -1,6 +1,6 @@
 import {React , useState } from 'react';
 import projectsData from './projects.json' ;
-import { Link,  Outlet , useParams} from 'react-router-dom';
+import { Link,  useParams} from 'react-router-dom';
 import './Projects.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -9,6 +9,8 @@ const Projects = () => {
    const param = useParams()
     let paramName = param.id
     let selectedProjects = projectsData[paramName]
+    console.log (projectsData)
+    console.log (selectedProjects)
     const [hideList , setHideList] = useState(true)
     const hideShowListFun = () => {
       setHideList(!hideList)
@@ -21,7 +23,7 @@ const Projects = () => {
    
   return (
     <div className="container projects flex-column">
-      <h2 className="capitalize projects-header page-header">our projects </h2>
+      <h2 className="capitalize projects-header page-header">my projects </h2>
       <div className="projects-list" >
         <div className="capitalize projects-list-header " onClick={hideShowListFun}> 
           projects 
@@ -45,17 +47,22 @@ const Projects = () => {
           </li>
         </ul>
       </div>
-      <div className="Projects-items mains">
+      <div className="projects-items flex-column">
       {selectedProjects.map((item , index) => {
         return (
-          <div className="flex-column project-item" key={index}>
-            <img src={ require(`./../../images/portfolio/${item.projectImg}`)} alt="" className="project-img" />
-            <h4 className="capitalize project-name">
-              {item.projectName} 
-              <Link className="arrow-icon icon project-link" to={item.projectURL}>
-                <FontAwesomeIcon icon="fa-solid fa-arrow-right" />             
-              </Link>
-            </h4>          
+          <div className={  "project-items" + ((index===0) || (index % 2 === 0) ? " cross-project" : " ")} key={index}>
+            <div className="project-item-info">
+              <img src={ require(`./../../images/portfolio/${item.projectImg}`)} alt="" className="project-img" />
+              <h4 className="capitalize project-name">
+                {item.projectName} 
+                <Link className="arrow-icon icon project-link" to={item.projectURL}>
+                  <FontAwesomeIcon icon="fa-solid fa-arrow-right"  className="icon"/>             
+                </Link>
+              </h4>          
+            </div>
+            <div className="project-item-desc">
+              <p className=" desc "> {item.projectDesc} </p>
+            </div>
           </div>
             )
           })}

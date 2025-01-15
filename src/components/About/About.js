@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Reviews from './reviews.json'
+import { Link , Outlet } from 'react-router-dom'
+
 import './About.css'
+import Skills from '../Skillls/Skills'
 
 
 
@@ -13,7 +14,7 @@ const About = () => {
         <h2 className="capitalize page-header">About me </h2>
         <div className="about-info">
           <p className=" capitalize desc coder-desc ">
-            passionate frontend web developer with 3 years of experience creating user friendly websites
+          I'm a passionate Frontend Developer with 3 years of experience turning ideas into responsive, user-friendly web interfaces. I specialize in converting designs into clean, efficient code using HTML, CSS, JavaScript, and Bootstrap. 
             <Link className="arrow-icon icon" to="./projects">
               <FontAwesomeIcon icon="fa-solid fa-arrow-right" />             
             </Link>
@@ -28,16 +29,7 @@ const About = () => {
           </p>
         
         </div>
-        <div className="clients-reviews">
-          {Reviews.map((item , index) => {
-            return (
-              <div className="review-img" key={index} >
-              <img src={ require(`./../../images/reviews/${item.reviewImg}`)} alt="" className="" /> 
-                                  
-              </div >
-                )
-              })}
-        </div>
+        <Skills />
       </div>
     
   )

@@ -1,8 +1,18 @@
-import {React , useState} from 'react'
-import { Link , NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './../Main/Main.css'
-import './Nav.css'
+import {React , useState , useEffect} from 'react';
+import { Link , NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './../Main/Main.css';
+import './Nav.css';
+import Contact from '../Contact/Contact';
+import Folder from './../../images/sections/folder-2.svg';
+import Wuser from './../../images/sections/women.svg';
+import service from './../../images/sections/code.svg';
+import User from './../../images/sections/lady.svg';
+import user from './../../images/sections/girl.svg';
+
+// <FontAwesomeIcon icon="fa-solid fa-folder-open" className="icon"/>
+// <FontAwesomeIcon icon="fa-solid fa-user " className="icon" /> 
+// <FontAwesomeIcon icon="fa-solid fa-code" className="icon" />
 
 
 const Nav = () => {
@@ -14,11 +24,8 @@ const Nav = () => {
         setShowHeader(false)
         console.log("hide")
     }  
-
-    //{ <li className="header-list-item " onClick={hideHeaderFun}>
-    // <NavLink to="/services"> <FontAwesomeIcon icon="fa-solid fa-code" className="icon" /> <span> services </span> 
-    // </NavLink>
-    // </li>}
+  
+   
   return (
         <div className="nav">   
                 <div className="flex-column  bar" onClick={showHeaderFun}>
@@ -30,13 +37,27 @@ const Nav = () => {
                     </div>
                     <ul className={"header-list flex-column" }>
                         <li className="header-list-item special-color" onClick={hideHeaderFun}>
-                            <NavLink to="/projects" className="special-color"> <FontAwesomeIcon icon="fa-solid fa-folder-open" className="icon"/> <span> Projects </span> </NavLink>
-                        </li>
+                            <NavLink to="/projects" className="special-color"> 
+                                <img src={Folder} alt="" />                             
+                                 <span className="sec-name"> Projects </span> 
+                            </NavLink>
+                                 </li>
+                        <li className="header-list-item  user" onClick={hideHeaderFun}>
+                            <NavLink to="/about" >                              
+                                 <img src={Wuser} alt="" />                             
+                                <span className="sec-name"> about me </span>  
+                            </NavLink>
+                        </li> 
                         <li className="header-list-item " onClick={hideHeaderFun}>
-                            <NavLink to="/about" > <FontAwesomeIcon icon="fa-solid fa-user " className="icon" /> <span> about me </span>  </NavLink>
-                        </li>             
+                            <NavLink to="/services"> 
+                                <img src={service} alt="" />  
+                                <span className="sec-name"> services </span> 
+                            </NavLink>
+                        </li>           
                     </ul>
-                </div>
+                    <Contact />
+                    </div>
+                    <button className="btn contact-btn capitalize" onClick={showHeaderFun}> contact me </button>
         </div>
   )
 }

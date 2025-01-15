@@ -1,0 +1,89 @@
+@import "./../Main/Main.css" ;
+
+
+.skills.flex-column {
+    /* align-items: flex-start; */
+    width: 100%;
+}
+.skill-item {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    animation: fade linear 1s;
+    -webkit-animation: fade linear 1s;
+     animation-timeline: view();
+    -webkit-animation-timeline: view();
+    animation-range: entry 30%;
+    /* flex-wrap: wrap; */
+}
+.skill-name{
+    font-size: 20px;
+}
+
+progress {
+    width: 300px;
+    height: 10px;
+    background-color: #eee;
+    background-color: var(--main-color, #5f5b5baf);
+    position:relative;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+progress::-webkit-progress-bar {
+    border-radius: 7px;
+    background-color: #333;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+  progress::-webkit-progress-value {
+    background-color:rgb(66, 116, 116);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+ .skill-item:nth-child(1)  progress::-webkit-progress-value{
+    background-color:rgb(202, 62, 104);
+   
+}
+ .skill-item:nth-child(2)  progress::-webkit-progress-value{
+    background-color:rgb(255, 252, 98);
+   
+}
+ .skill-item:nth-child(3)  progress::-webkit-progress-value{
+    background-color:rgb(66, 116, 116);
+   
+}
+ .skill-item:nth-child(4)  progress::-webkit-progress-value{
+    background-color:rgb(236, 94, 28);
+   
+}
+.skill-bar::before {
+    content: attr(prog);
+    position: absolute;
+    top: -30px;
+    right: 6px;
+    font-size: 20px;
+    color: var(--main-color);
+    
+}
+/* .skill-item:nth-child(1) .skill-bar::before {
+    color: rgb(202, 62, 104);   
+} */
+
+
+@media (max-width:767px){
+    .skill-item {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+}

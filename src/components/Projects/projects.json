@@ -4,14 +4,14 @@
             {
             "projectName": "Interno Design" ,
             "projectAttr": "Interno-Design"  ,
-            "projectDesc": "Interno Design Figma design consist of 17 pags which designed by webflow, you can check figma design from this link : https://www.figma.com/file/oeD3OhRMrLMLNagefYkRHA/Interior-Design-Website-Template-(Community)?node-id=1%3A286&mode=dev . I converted it in HTML, CSS, SCSS, and JS all of them responsive for all screens." ,
+            "projectDesc": "A sleek and modern interior design website showcasing creative solutions for home and office spaces. Features an elegant layout with sections for services, projects, and contact details, designed to provide a premium user experience." ,
             "projectURL": "https://toqa-25.github.io/Interno-Design/",
             "projectImg": "Interno-Design.png"
             },
             {
                 "projectName": "travel website" ,
                 "projectAttr": "travel-website"  ,
-                "projectDesc": "travel website is website build with HTML, CSS, JS, and SASS. It is consist of 5 pages in responsive design for all screens. in this design we used AOS liberary to make it more dynamic and more attractive." ,
+                "projectDesc": "A travel website offering a seamless user experience. Includes sections for travel services, blogs, and booking, with a modern and responsive design." ,
                 "projectURL": "https://toqa-25.github.io/travel-website/",
                 "projectImg": "travel-website.png"
             }, 
@@ -25,15 +25,15 @@
             {
                 "projectName": "bondi website" ,
                 "projectAttr": "bondi-website"  ,
-                "projectDesc": "hospital website is psd design build with HTML, CSS, Bootstrap, and JS in responsive design for all screens, this website consist of 3 pages.this design from grophberry website. ",
+                "projectDesc": "A vibrant and dynamic landing page for a modern service or product. It features a clean design, bold typography, and engaging visuals to attract user attention. The layout is optimized for both desktop and mobile users, ensuring a seamless browsing experience. ",
                 "projectURL": "https://toqa-25.github.io/Bondi/",
                 "projectImg": "bondi.png"
             },
             {
                 "projectName": "special design" ,
                 "projectAttr": "special-design"  ,
-                "projectDesc": "It is landing page consist of 7 sections, build with HTML, CSS, and JS in responsive design for all screens, It contains Setting box to change it's options .in setting box you can change website color, Choose random background or static background, you can show bollet list to scroll to any sections, and you can reset all options"  ,
-                "projectURL": "https://toqa-25.github.io/Bondi/",
+                "projectURL": "https://toqa-25.github.io/special-design/",
+                "projectDesc": "A visually appealing website showcasing creative and unique design solutions. The project highlights modern aesthetics with smooth animations and an intuitive layout that enhances the user experience across all devices.",
                 "projectImg": "special-design.png"
             },
             {
@@ -81,7 +81,7 @@
             {
                 "projectName": "meet landing page" ,
                 "projectAttr": "meet-landing-page"  ,
-                "projectDesc": "meet agency is figma design build with HTML, and CSS in responsive design for all screens, it is  from frontendmentor  website " ,
+                "projectDesc": "An interactive meeting page designed to offer a comprehensive experience for managing virtual meetings. Features include messaging, file sharing, screen sharing, and meeting recording, with security options such as encryption and controlled access." ,
                 "projectURL": "https://toqa-25.github.io/landing-meeting-page/",
                 "projectImg": "meet-landing-page.png"
             }
@@ -93,14 +93,14 @@
               {
                   "projectName": "Interno Design" ,
                   "projectAttr": "Interno-Design"  ,
-                  "projectDesc": "Interno Design Figma design consist of 17 pags which designed by webflow, you can check figma design from this link : https://www.figma.com/file/oeD3OhRMrLMLNagefYkRHA/Interior-Design-Website-Template-(Community)?node-id=1%3A286&mode=dev . I converted it in HTML, CSS, SCSS, and JS all of them responsive for all screens." ,
+                  "projectDesc": "A sleek and modern interior design website showcasing creative solutions for home and office spaces. Features an elegant layout with sections for services, projects, and contact details, designed to provide a premium user experience." ,
                   "projectURL": "https://toqa-25.github.io/Interno-Design/",
                   "projectImg": "Interno-Design.png"
               },
             {
                 "projectName": "meet landing page" ,
                 "projectAttr": "meet-landing-page"  ,
-                "projectDesc": "meet agency is figma design build with HTML, and CSS in responsive design for all screens, it is  from frontendmentor  website " ,
+                "projectDesc": "An interactive meeting page designed to offer a comprehensive experience for managing virtual meetings. Features include messaging, file sharing, screen sharing, and meeting recording, with security options such as encryption and controlled access." ,
                 "projectURL": "https://toqa-25.github.io/landing-meeting-page/",
                 "projectImg": "meet-landing-page.png"
             }          
