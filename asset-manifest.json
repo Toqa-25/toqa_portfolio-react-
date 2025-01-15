@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/toqa_portfolio-react-/static/css/main.6975e580.css",
-    "main.js": "/toqa_portfolio-react-/static/js/main.259c7b59.js",
+    "main.js": "/toqa_portfolio-react-/static/js/main.73b98c40.js",
     "static/js/453.ea6ecb6a.chunk.js": "/toqa_portfolio-react-/static/js/453.ea6ecb6a.chunk.js",
     "static/media/clipboard-landing-page.png": "/toqa_portfolio-react-/static/media/clipboard-landing-page.e672421604ae94a9b8b9.png",
     "static/media/coffe-website.png": "/toqa_portfolio-react-/static/media/coffe-website.94e34f3cfcbd600245c6.png",
@@ -39,11 +39,11 @@
     "static/media/javascript.svg": "/toqa_portfolio-react-/static/media/javascript.f1bf7e57857b01c9686aa12fd518f754.svg",
     "static/media/figma.svg": "/toqa_portfolio-react-/static/media/figma.784f426a838b62ca88a325aaa2b56975.svg",
     "main.6975e580.css.map": "/toqa_portfolio-react-/static/css/main.6975e580.css.map",
-    "main.259c7b59.js.map": "/toqa_portfolio-react-/static/js/main.259c7b59.js.map",
+    "main.73b98c40.js.map": "/toqa_portfolio-react-/static/js/main.73b98c40.js.map",
     "453.ea6ecb6a.chunk.js.map": "/toqa_portfolio-react-/static/js/453.ea6ecb6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6975e580.css",
-    "static/js/main.259c7b59.js"
+    "static/js/main.73b98c40.js"
   ]
 }
